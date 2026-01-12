@@ -1,0 +1,35 @@
+class Config:
+    MAZE_WIDTH = 8  
+    MAZE_HEIGHT = 8  
+    WALL_DENSITY = 0.2
+    
+    LEARNING_RATE = 0.6     
+    DISCOUNT_FACTOR = 0.9
+    EXPLORATION_RATE = 0.3
+    EXPLORATION_DECAY = 0.995
+    MIN_EXPLORATION_RATE = 0.05  
+
+    EPISODES = 500
+    MAX_STEPS_PER_EPISODE = 50
+    
+    REWARD_CATCH = 100
+    REWARD_STEP = -0.05          
+    REWARD_WALL = -2             
+    REWARD_CLOSER = 3
+    
+    CELL_SIZE = 75  
+    FPS = 30
+    SCREEN_WIDTH = MAZE_WIDTH * CELL_SIZE  
+    SCREEN_HEIGHT = MAZE_HEIGHT * CELL_SIZE + 180  
+    
+    BACKGROUND = (240, 240, 240)
+    WALL = (70, 70, 70)
+    EMPTY = (255, 255, 255)
+    CAT = (255, 100, 100)      
+    MOUSE = (100, 100, 255)    
+    PATH = (180, 255, 180)
+    TEXT = (30, 30, 30)
+    GRID = (200, 200, 200)
+    PANEL = (220, 220, 220)
+    BUTTON = (100, 150, 255)
+    BUTTON_HOVER = (120, 170, 255)
